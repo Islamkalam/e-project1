@@ -1,0 +1,93 @@
+@font-face {
+    font-family: popin;
+    src: url('./Poppins-Light.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: popin;
+}
+html{
+    overflow-x: hidden;
+}
+body{
+    background: white;
+}
+iframe{
+    width: 100vw;
+    margin-top: 20px;
+}
+section{
+    margin-top: 80px;
+    margin-left: 80px;
+    width: 40vw;
+    color: black;
+    display: inline-block;
+}
+.message{
+    height: 180px;
+    width: 90%;
+    text-align: start;
+    text-align: left;
+
+}
+input[type='text']{
+    width: 350px;
+    outline: none;
+    border-radius: 20px;
+    font-size: large;
+    font-weight: 300;
+    padding-left: 10px;
+    border: none;
+    background-color: rgba(194, 186, 186, 0.219);
+    color: black;
+}
+input[type='email']{
+    width: 350px;
+    outline: none;
+    border-radius: 20px;
+    font-size: large;
+    font-weight: 300;
+    padding-left: 10px;
+    border: none;
+    background-color: rgba(194, 186, 186, 0.219);
+    color: black;
+}
+textarea{
+    outline: none;
+    border-radius: 20px;
+    font-size: large;
+    font-weight: 300;
+    padding-left: 10px;
+    border: none;
+    background-color: rgba(194, 186, 186, 0.219);
+    color: black;
+}
+input[type='submit']{
+    padding: 10px;
+    background-color: darkblue;
+    color: white;
+    margin-top: 5px;    
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+}
+.mail{
+    color: black;
+    display: inline-block;
+    margin-left: 100px;
+}
+.mail .fa-envelope-o{
+    font-size: 32px;
+    display: inline-block;
+}
+.mail p{
+    margin-top: 4px;
+    display: inline-block;
+    margin-left: 10px;
+}
+.mail .fa-phone{
+    font-size: 32px;
+    display: inline-block;
+}

@@ -1,0 +1,21 @@
+$(document).on('scroll',function(){
+    if($(this).scrollTop()>1){
+        $('header').addClass('sticky');
+    }else{
+        $('header').removeClass('sticky');      
+    }
+})
+$(document).ready(function(){
+    $('#bars').click(function(){
+        $('.none').show()
+    })
+    $('.fa-times').click(function(){
+        $('.none').hide()
+    })
+})
+
+$(document).ready(function(){
+    $('.login').click(function(){
+        $('.login').innerHtml='logout'
+    })
+})

@@ -1,0 +1,151 @@
+:root{
+    --main-color: rgb(11, 7, 44);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    overflow-x: hidden;
+}
+.mainsection{
+    width: 100vw;
+    display: flex;
+    margin-top: 30px;
+}
+
+/* leftsection */
+
+.left{
+    width: 16%;
+    height: 720px;
+}
+.left h1{
+    text-align: center;
+    color: var(--main-color);
+    font-size: 28px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+.left ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.left ul li{
+    width: 50%;
+    list-style-type: none;
+    margin-top: 3px;
+    cursor: pointer;
+}
+.list:hover{
+    background-color: var(--main-color);
+    transform: translateX(10px);
+    color: white;
+}
+.right{
+    width: 84%;
+    display: grid;
+    grid-template-columns: repeat(4,230px);
+    grid-template-rows: repeat(4,340px);
+    justify-content: space-around;
+    row-gap: 20px;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+}
+.item:hover{
+    box-shadow: 1px 1px 2px 3px gainsboro;
+}
+.item img{
+    height: 65%;
+    width: 100%;
+}
+.item h3{
+    padding-left: 5px;
+}
+.item p{
+    padding-left: 5px;
+}
+.active{
+    background-color: var(--main-color);
+    transform: translateX(10px);
+    color: white;
+}
+.button{
+    display: flex;
+}
+.add{
+    padding: 2px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 40%;
+}
+.sub{
+    padding: 2px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 40%;
+}
+.products{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 3rem;
+    text-decoration: underline;
+}
+.ani:hover{
+    animation-name: top;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+@keyframes top{
+    from{transform: translateY(-10px);}
+}
+@media(max-width:768px){
+    .mainsection{
+        display: block;
+    }
+    .left{
+        width: 100vw;
+        height: 250px;
+    }
+    .left ul{
+        flex-direction: row;
+        width: 100%;
+        flex-wrap: nowrap;
+        margin: auto;
+        justify-content: space-around;
+    }
+    .left ul li{
+        width: 10%;
+    }
+    .right{
+        width: 100%;
+        grid-template-columns: repeat(2,230px);
+    }
+}
+@media(max-width:320px){
+    .left ul{
+        flex-wrap: wrap;
+    }
+    .right{
+        margin-top: 100px;
+        grid-template-columns: repeat(1,230px);
+    }
+    .wrap{
+        flex-direction: column !important;
+        display: block;
+        height: 100px;
+    }
+    .wrap ul li{
+        display: flex;
+        flex-direction: column;
+    }
+}

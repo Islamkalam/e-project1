@@ -1,0 +1,427 @@
+@font-face {
+    font-family: popin;
+    src: url('./Poppins-Light.ttf');
+}
+:root{
+    --main-color: rgb(11, 7, 44);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    overflow-x: hidden;
+}
+
+/* banner2 */
+
+.banner2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+    width: 100vw;
+}
+.banner2 .box{
+    height: 100%;
+    width: 32%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box img{
+    height: 100%;
+    width: 100%;
+    
+}
+.bannerText2{
+    position: absolute;
+    color: white;
+    font-size: 24px;
+}
+.bannerText2 p{
+    text-align: center;
+    line-height: 50px;
+}
+
+/* banner3 */
+
+.banner3{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    height: 450px;
+    width: 100vw;
+}
+.banner3 .box{
+    height: 100%;
+    width: 40%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.banner3 .box img{
+    height: 100%;
+    width: 100%;
+    border: 2px solid gainsboro;
+    
+}
+.bannerText3{
+    position: absolute;
+    bottom: 25px;
+    color: white;
+}
+.bannerText3 P{
+    border: 2px solid white;
+    padding: 10px;
+    font-size: 28px;
+}
+
+/* banner4 */
+
+.banner4{
+    margin-top: 20px;
+    width: 100vw;
+    height: 515px;
+    display: flex;
+    justify-content: space-around;
+}
+.bannerText4{
+    height: 100%;
+    width: 40%;
+}
+.bannerText4 h1{
+    margin-top: 50px;
+    color: rgba(0, 0, 255, 0.685);
+}
+.bannerText4 h2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 400px;
+    font-size: 32px;
+}
+.bannerText4 ul li{
+    margin-top: 10px;
+    list-style-position: inside;
+    font-size: 18px;
+}
+.bannerText4 ul li span{
+    color: rgba(0, 0, 255, 0.685);
+}
+.filter{
+    margin-top: 20px;
+    width: 100vw;
+}
+.filter ul{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    justify-content: space-around;
+}
+.filter ul li{
+    list-style-type: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.filtercart{
+    margin: auto;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(4,230px);
+    grid-template-rows: repeat(2,340px);
+    justify-content: space-around;
+    row-gap: 20px;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+}
+.item:hover{
+    box-shadow: 1px 1px 2px 3px gainsboro;
+}
+.item img{
+    height: 65%;
+    width: 100%;
+}
+.item h3{
+    padding-left: 5px;
+}
+.item p{
+    padding-left: 5px;
+}
+.active{
+    background-color: rgb(233, 17, 17);
+    color: white;
+}
+.button{
+    display: flex;
+}
+.add{
+    padding: 2px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 40%;
+}
+.sub{
+    padding: 2px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 40%;
+}
+.products{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 3rem;
+    text-decoration: underline;
+}
+.ani:hover{
+    animation-name: top;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+@keyframes top{
+    from{transform: translateY(-10px);}
+}
+@media(max-width:1024px){
+    .banner2{
+        height: 350px;
+    }
+    .bannerText2{
+        font-size: 1.1rem;
+    }
+    .banner4 img{
+        width: 40%;
+        height: 500px;
+    }
+    .bannerText4{
+        width: 50%;
+    }
+    .bannerText5{
+        display: none;
+    }
+}
+@media(max-width:860px){
+    .banner2{
+        height: 270px;
+    }
+    .bannerText2{
+        font-size: 1rem;
+    }
+    .banner3{
+        height: 350px;
+    }
+    .bannerText3 p{
+        font-size: 1.5rem;
+    }
+    .banner4{
+        margin-top: 310px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner4 img{
+        width: 90%;
+        height: 600px;
+        margin-bottom: 20px;
+    }
+    .bannerText4{
+        width: 100%;
+        padding-left: 20px;
+    }
+    .banner5{
+        margin-top: 320px;
+    }
+}
+@media(max-width:810px){
+    .banner4{
+        margin-top: 330px;
+    }
+    
+}
+@media(max-width:768px){
+    .filter{
+        margin-top: 280px;
+    }
+    .filtercart{
+        grid-template-columns: repeat(2,230px);
+    }
+}
+@media(max-width:730px){
+    .banner2{
+        height: 240px;
+    }
+    .bannerText2{
+        font-size: 0.9rem;
+    }
+    .banner3{
+        height: 300px;
+    }
+    .bannerText3 p{
+        font-size: 1.2rem;
+    }
+}
+@media(max-width:630px){
+    .banner2{
+        height: 200px;
+    }
+    .bannerText2{
+        font-size: 0.7rem;
+    }
+    .banner3{
+        height: 250px;
+    }
+    .bannerText3 p{
+        font-size: 1rem;
+    }
+    .banner4{
+        margin-top: 300px;
+    }
+}
+@media(max-width:590px){
+    .banner2{
+        margin-top: 10px;
+        display: block;
+        height: 530px;
+    }
+    .banner2 .box{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .bannerText2{
+        font-size: 1.7rem;
+    }.banner3{
+        margin-top: 1100px;
+        display: block;
+        height: 530px;
+    }
+    .banner3 .box{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .bannerText3 p{
+        font-size: 2rem
+    }
+    .banner4 img{
+        width: 100%;
+        margin-top: 1100px;
+    }
+    .banner5{
+        margin-top: 860px;
+    }
+}
+@media(max-width:530px){
+    .banner2{
+        height: 430px;
+    }
+    .banner3{
+        margin-top: 900px;
+        height: 430px;
+    }
+    .banner4{
+        margin-top: 170px;
+    }
+    .banner4 img{
+        margin-top: 1100px;
+    }
+}
+@media(max-width:460px){
+    .banner4 img{
+        margin-top: 1000px;
+    }
+    .banner5{
+        margin-top: 740px;
+    }
+}
+@media(max-width:425px){
+    .banner2{
+        height: 350px;
+    }
+    .bannerText2{
+        font-size: 1.3rem;
+    }
+    .banner3{
+        margin-top: 740px;
+        height: 350px;
+    }
+    .bannerText3 p{
+        font-size: 1.5rem;
+    }
+    .banner4 img{
+        margin-top: 720px;
+        height: 400px;
+    }
+    .bannerText4 h1{
+        margin-top: 10px;
+        font-size: 28px;
+    }
+    .bannerText4 h2{
+        margin-top: 10px;
+        font-size: 26px;
+    }
+    .bannerText4 ul li{
+        font-size: 1rem;
+    }
+    .banner5{
+        margin-top: 510px;
+    }
+}
+@media(max-width:375px){
+    .banner2{
+        height: 320px;
+    }
+    .banner3{
+        margin-top: 670px;
+        height: 320px;
+    }
+    .bannerText3{
+        bottom: 20px;
+    }
+    .banner4 img{
+        margin-top: 600px;
+    }
+    .bannerText4{
+        padding-left: 2px;
+    }
+    .bannerText4 h1{
+        font-size: 2rem;
+    }
+    .bannerText4 h2{
+        font-size: 1.2rem;
+        width: 100vw;
+        margin-top: 5px;
+    }
+    .banner5{
+        margin-top: 450px;
+    }
+
+}
+@media(max-width:320px){
+    .banner3{
+        height: 290px;
+    }
+    .bannerText3 p{
+        font-size: 1.3rem;
+    }
+    .banner4 img{
+        margin-top: 540px;
+    }
+    .banner5{
+        margin-top: 400px;
+        height: 200px;
+    }
+    .filter{
+        margin-top: 380px;
+    }
+    .filtercart{
+        grid-template-columns: repeat(1,230px);
+    }
+}
